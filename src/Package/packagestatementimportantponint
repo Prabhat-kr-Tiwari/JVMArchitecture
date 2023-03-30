@@ -1,0 +1,8 @@
+package pack1;
+pacakge pack2;
+public class Test{
+
+
+}
+in any java source atmost only one package name is allowed
+if there are more than one package statement then the compiler will give left and right
