@@ -1,4 +1,4 @@
-package COnstructor.SuperandThis;
+package COnstructor.SuperandThisConstructorCall;
 
 public class SuperAndThisConstructorCall {
 
