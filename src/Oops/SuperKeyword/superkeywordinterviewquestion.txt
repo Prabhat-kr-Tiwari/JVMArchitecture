@@ -1,0 +1,80 @@
+1What is the purpose of the super keyword in Java?
+Answer: The super keyword is used to refer to the superclass of the current class.
+ It can be used to call the constructor of the superclass or to access a method of the superclass
+ from a subclass.
+
+2How is the super keyword used to call the constructor of the superclass?
+Answer: When creating an object of a subclass, the constructor of the superclass is called implicitly
+ before the constructor of the subclass. However, if the superclass has a parameterized constructor,
+  we need to use the super keyword to call the superclass constructor explicitly with the required
+  arguments. This is done using the super() method call, which should be the first statement in the
+   constructor of the subclass.
+
+3.How is the super keyword used to call a method of the superclass?
+Answer: The super keyword can be used to call a method of the superclass from a subclass.
+ This is useful when a subclass needs to access a method of the superclass that has been overridden
+  in the subclass. This is done using the super.methodName() syntax, where methodName is the name of
+  the method in the superclass.
+
+4.Can you call a private method of the superclass using the super keyword?
+Answer: No, a private method of the superclass cannot be accessed from the subclass using the super
+ keyword. Private methods are only accessible within the same class in which they are declared.
+
+5.What is the difference between this and super in Java?
+Answer: this keyword is used to refer to the current object, whereas super keyword is used to refer
+ to the superclass of the current class. this is used to access the instance variables and methods
+  of the current object, while super is used to access the members of the superclass.
+
+6.Can the super keyword be used in a static method?
+Answer: No, the super keyword cannot be used in a static method. Static methods belong to the class,
+ not to an instance of the class, so the super keyword cannot be used to refer to a superclass object.
+
+7.Can the super keyword be used in an interface in Java?
+Answer: No, the super keyword cannot be used in an interface in Java. Interfaces only define method
+ signatures and do not have implementations, so there is no superclass to refer to.
+
+8.Can you call the constructor of the superclass multiple times using the super keyword?
+Answer: No, the constructor of the superclass can only be called once using the super keyword.
+The super() method call should be the first statement in the constructor of the subclass, and calling
+it multiple times would result in a compilation error.
+
+9.Can the super keyword be used outside the constructor of a subclass?
+Answer: Yes, the super keyword can be used outside the constructor of a subclass to call a method of
+ the superclass from a subclass.
+
+10.How does the super keyword help in avoiding code duplication in Java?
+Answer: The super keyword can be used to access a method of the superclass from a subclass.
+This can help in avoiding code duplication by allowing the subclass to reuse the implementation
+of a method in the superclass. Additionally, the super keyword can be used to call the constructor
+ of the superclass, which can be useful for initializing common fields or behavior in the superclass.
+
+
+ Can the super keyword be used to access instance variables of the superclass?
+ Answer: Yes, the super keyword can be used to access instance variables of the superclass. This can be useful when a subclass needs to access or modify a field that is defined in the superclass.
+
+ Can the super keyword be used to access static members of the superclass?
+ Answer: No, the super keyword cannot be used to access static members of the superclass. Static members belong to the class, not to an instance of the class, so the super keyword cannot be used to refer to a superclass object.
+
+ Can the super keyword be used to refer to a superclass that is more than one level above the current class?
+ Answer: Yes, the super keyword can be used to refer to a superclass that is more than one level above the current class. This can be done by chaining the super keyword with the name of the superclass, as in super.superclass.methodName().
+
+ Can the super keyword be used to call a default constructor of the superclass?
+ Answer: Yes, the super keyword can be used to call a default constructor of the superclass. If the constructor of the superclass is not explicitly called using super(), then the default constructor of the superclass is called implicitly.
+
+ Can the super keyword be used in a constructor of the superclass?
+ Answer: No, the super keyword cannot be used in a constructor of the superclass. The super keyword is used in the constructor of a subclass to call the constructor of the superclass, but it cannot be used in the constructor of the superclass itself.
+
+ Can the super keyword be used in a final method of the superclass?
+ Answer: Yes, the super keyword can be used in a final method of the superclass. A final method in the superclass cannot be overridden in the subclass, but it can still be called using the super keyword.
+
+ Can the super keyword be used in an abstract method of the superclass?
+ Answer: Yes, the super keyword can be used in an abstract method of the superclass. An abstract method in the superclass is defined without an implementation, but it can still be called using the super keyword in the subclass that provides the implementation.
+
+ How is the super keyword different from the extends keyword in Java?
+ Answer: The super keyword is used to refer to the superclass of the current class, while the extends keyword is used to indicate that a class is a subclass of another class. The extends keyword is used in the class declaration, while the super keyword is used within the code to access or call members of the superclass.
+
+ How is the super keyword used in method overriding in Java?
+ Answer: The super keyword is used in method overriding to call the method of the superclass from the subclass. This can be useful when the subclass needs to reuse the implementation of the superclass method, but also needs to add or modify some behavior.
+
+ How is the super keyword used in method hiding in Java?
+ Answer: The super keyword is not used in method hiding in Java. Method hiding occurs when a subclass defines a static method with the same name as a static method in the superclass. In this case, the subclass method "hides" the superclass method, and it can be called using the subclass name instead of the super keyword.
