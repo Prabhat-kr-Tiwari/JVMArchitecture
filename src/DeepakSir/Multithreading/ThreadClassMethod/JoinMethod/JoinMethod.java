@@ -15,9 +15,10 @@ public class JoinMethod extends Thread{
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         JoinMethod joinMethod=new JoinMethod();
         joinMethod.start();
+        joinMethod.join();
         for (int i = 0; i <5 ; i++) {
             System.out.println(currentThread().getName()+"     "+i);
             try {
